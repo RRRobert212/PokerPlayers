@@ -13,7 +13,8 @@ class Player{
     void setPlayerName(std::string& newName);
     void setVPIP(double newVPIP);
     void displayPlayer() const; //the const is here because displayPlayer doesn't modify anything in the object. This helps runtime I think
-
+    std::string getPlayerName() const;
+    double getVPIP() const;
 
 
     private:
@@ -24,6 +25,7 @@ class Player{
 
 
 };
+
 
 
 #endif //players.h
